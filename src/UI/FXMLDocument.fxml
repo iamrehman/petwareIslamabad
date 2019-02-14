@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="769.0" style="-fx-background-color: #e6f3ff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.FXMLDocumentController">
+   <children>
+      <JFXButton fx:id="login" buttonType="RAISED" layoutX="526.0" layoutY="386.0" onAction="#loginHandler" prefHeight="58.0" prefWidth="143.0" ripplerFill="#ebebeb" style="-fx-background-color: #4da9ff;" text="Login" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <Label accessibleRole="CONTEXT_MENU" layoutX="19.0" layoutY="89.0" prefHeight="133.0" prefWidth="340.0" text="Welcom to Petware Islamabad" textAlignment="CENTER" textFill="#00a4cd" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="idLogin" alignment="CENTER" labelFloat="true" layoutX="469.0" layoutY="231.0" prefHeight="48.0" prefWidth="257.0" promptText="Login ID" style="-fx-background-color: #80ccff;" unFocusColor="#31129d">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="CENTER" labelFloat="true" layoutX="469.0" layoutY="316.0" prefHeight="48.0" prefWidth="257.0" promptText="Password" style="-fx-background-color: #80ccff;" unFocusColor="#3302d3">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXPasswordField>
+      <AnchorPane fx:id="ImagePane" layoutX="22.0" layoutY="246.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="261.0" fitWidth="413.0" layoutX="-14.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../newlogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      
+   </children>
+</AnchorPane>

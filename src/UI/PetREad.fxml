@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="672.0" style="-fx-background-color: #e6f3ff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.PetREadController">
+   <children>
+      <AnchorPane layoutX="168.0" layoutY="565.0" />
+      <Label accessibleRole="CONTEXT_MENU" layoutX="212.0" layoutY="-4.0" prefHeight="36.0" prefWidth="286.0" text="Petware Islamabad" textAlignment="CENTER" textFill="#00a4cd" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="35.0" prefHeight="444.0" prefWidth="511.0" style="-fx-background-color: #cce6ff;">
+         <children>
+            <TreeTableView fx:id="Table" prefHeight="522.0" prefWidth="681.0">
+               <columns>
+                  <TreeTableColumn fx:id="ItemID" prefWidth="182.0" resizable="false" sortable="false" text="Item ID" />
+                  <TreeTableColumn fx:id="ItemName" prefWidth="249.0" resizable="false" sortable="false" text="Name" />
+                  <TreeTableColumn fx:id="ItemPrice" prefWidth="249.0" resizable="false" sortable="false" text="Price" />
+               </columns>
+            </TreeTableView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="HomeButton" layoutX="283.0" layoutY="572.0" onAction="#homeButtonHandler" prefHeight="54.0" prefWidth="162.0" ripplerFill="#5c22fc" style="-fx-background-color: #80c1ff;" text="Home" textFill="#393939" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

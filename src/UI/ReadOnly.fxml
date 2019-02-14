@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ReadOnlyController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="tabinfo" layoutY="-4.0" prefHeight="630.0" prefWidth="815.0" style="-fx-background-color: #e6f3ff;">
+         <children>
+            <AnchorPane layoutX="168.0" layoutY="565.0" />
+            <Label accessibleRole="CONTEXT_MENU" layoutX="227.0" layoutY="14.0" prefHeight="36.0" prefWidth="286.0" text="Petware Islamabad" textAlignment="CENTER" textFill="#00a4cd" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="31.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="owner" buttonType="RAISED" layoutX="271.0" layoutY="136.0" onAction="#ownerHandler" prefHeight="112.0" prefWidth="181.0" ripplerFill="#ebebeb" style="-fx-background-color: #80c1ff;" text="View Owner" textFill="#222222" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="pet" buttonType="RAISED" layoutX="271.0" layoutY="275.0" onAction="#petHanlder" prefHeight="112.0" prefWidth="181.0" ripplerFill="#ebebeb" style="-fx-background-color: #80c1ff;" text="View Pet" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="item" buttonType="RAISED" layoutX="271.0" layoutY="412.0" onAction="#Itemhandler" prefHeight="112.0" prefWidth="181.0" ripplerFill="#ebebeb" style="-fx-background-color: #80c1ff;" text="View item" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

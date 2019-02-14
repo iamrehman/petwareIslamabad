@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.NewGuiController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="tabinfo" layoutX="10.0" layoutY="10.0" prefHeight="630.0" prefWidth="815.0" style="-fx-background-color: #e6f3ff;">
+         <children>
+            <AnchorPane layoutX="168.0" layoutY="565.0" />
+            <Label accessibleRole="CONTEXT_MENU" layoutX="14.0" layoutY="-4.0" prefHeight="36.0" prefWidth="286.0" text="Petware Islamabad" textAlignment="CENTER" textFill="#00a4cd" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="31.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="35.0" prefHeight="444.0" prefWidth="511.0" style="-fx-background-color: #cce6ff;">
+               <children>
+                  <TreeTableView fx:id="Table" prefHeight="522.0" prefWidth="511.0">
+                     <columns>
+                        <TreeTableColumn fx:id="colName" prefWidth="510.0" resizable="false" sortable="false" text="Column Name" />
+                     </columns>
+                  </TreeTableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="541.0" layoutY="49.0" prefHeight="508.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="viewData" buttonType="RAISED" layoutX="6.0" onAction="#veiwDataHandler" prefHeight="112.0" prefWidth="181.0" ripplerFill="#ebebeb" style="-fx-background-color: #80c1ff;" text="View MetaData" textFill="#222222" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="readonly" buttonType="RAISED" layoutX="6.0" layoutY="130.0" onAction="#readonlyHandler" prefHeight="112.0" prefWidth="181.0" ripplerFill="#ebebeb" style="-fx-background-color: #80c1ff;" text="Open Read Only" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="openupdate" buttonType="RAISED" layoutX="6.0" layoutY="254.0" onAction="#openupdateHandler" prefHeight="112.0" prefWidth="181.0" ripplerFill="#ebebeb" style="-fx-background-color: #80c1ff;" text="Open Updatable" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

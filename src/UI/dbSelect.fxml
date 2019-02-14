@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="769.0" style="-fx-background-color: #e6f3ff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.DbSelectController">
+   <children>
+      <JFXButton fx:id="sqlbutton" buttonType="RAISED" layoutX="224.0" layoutY="311.0" onAction="#sqlhandler" prefHeight="58.0" prefWidth="143.0" ripplerFill="#ebebeb" style="-fx-background-color: #4da9ff;" text="My Sql" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <Label accessibleRole="CONTEXT_MENU" layoutX="239.0" layoutY="-40.0" prefHeight="133.0" prefWidth="340.0" text="Petware Islamabad" textAlignment="CENTER" textFill="#00a4cd" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="ImagePane" layoutX="22.0" layoutY="246.0" />
+      <JFXButton fx:id="accessbutton" buttonType="RAISED" layoutX="397.0" layoutY="311.0" onAction="#accesshandler" prefHeight="58.0" prefWidth="143.0" ripplerFill="#ebebeb" style="-fx-background-color: #4da9ff;" text="MS Access" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <JFXSpinner fx:id="spinner" layoutX="360.0" layoutY="246.0" />
+   </children>
+</AnchorPane>
